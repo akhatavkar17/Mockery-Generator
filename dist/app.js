@@ -5,7 +5,7 @@ function crazyCase(input) {
     for (var i = 0; i < input.length; i++) {
         var factor = 50000000; // randomness factor
         var rando = parseInt((Math.random() * factor).toFixed(0)); // get random number
-        var divider = parseInt((Math.random() * 10).toFixed(0));
+        var divider = 2; // parseInt((Math.random() * 10).toFixed(0));
         if (rando % divider === 0) {
             // if even uppercase
             out += input[i].toUpperCase();

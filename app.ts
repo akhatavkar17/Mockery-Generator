@@ -6,7 +6,7 @@ function crazyCase(input: string) {
   for (let i = 0; i < input.length; i++) {
     let factor = 50000000; // randomness factor
     let rando = parseInt((Math.random() * factor).toFixed(0)); // get random number
-    let divider = parseInt((Math.random() * 10).toFixed(0));
+    let divider = 2; // parseInt((Math.random() * 10).toFixed(0));
     if (rando % divider === 0) {
       // if even uppercase
       out += input[i].toUpperCase();
