@@ -6,56 +6,93 @@
 }
 body {
   background-image: url("../assets/Mockery-background.jpg");
-  background-size: cover;
+  background-size: auto;
+}
+
+h1 {
+  margin: 25px 0px 0px 0px;
+  font-size: 75px;
+}
+
+textarea{
+  resize: none;
+  border: none;
+  outline: none;
 }
 
 .top {
   text-align: center;
-  font-size: 40px;
   color: #f2f2f2;
 }
+
 .top > p {
   font-size: 30px;
 }
-h1 {
-  margin: 25px 0px 0px 0px;
-}
+
 .translate-container {
   display: flex;
   width: 100%;
 }
-.translate-container > .e-box {
+
+.box-alt {
   width: 100%;
   height: 100%;
-  border: none;
-  resize: none;
-  outline: none;
   padding: 20px;
   box-sizing: border-box;
-  border-radius: 2px;
-  font-size: 24px;
   flex-direction: row;
 }
-.translate-container > .o-box {
-  width: 100%;
-  height: 100%;
-  border: none;
-  resize: none;
-  outline: none;
-  padding: 20px;
-  box-sizing: border-box;
-  border-radius: 2px;
-  font-size: 24px;
-  flex-direction: row;
-}
+
 .boxes {
   width: 100%;
   height: 100%;
   font-size: 30px;
   padding: 10px 10px 10px 15px;
   background: #dadada;
+  border-radius: 6px;
 }
 
 #out-box {
   cursor: text;
+}
+
+
+/* -------------------------RESPONSIVE---------------------------*/
+
+
+@media only screen and (max-width: 1000px){
+.boxes{
+    font-size: 26px;
+  }
+}
+
+@media only screen and (max-width: 875px){
+  .translate-container {
+    display: block;
+  }
+
+  .box-alt{
+    margin: auto;
+    width: 85%;
+    border: none;
+    resize: none;
+    outline: none;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  h1{
+    font-size: 50px;
+    margin: 20px 0px 0px 0px;
+  }
+  .top > p {
+    font-size: 24px;
+  }
+  .box-alt{
+    width: 100%;
+    margin: 0 0 -15px 0;
+  }
+  .boxes{
+    max-height: 212px;
+    font-size: 22px;
+  }
 }
