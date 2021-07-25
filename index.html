@@ -41,11 +41,17 @@
           readonly
         ></textarea>
         <button class="clipboard" type="button" name="button" onclick="copy()">
-          <svg width="16" height="19" fill="none"><path d="M4.5 2.67H3.12c-1.06 0-1.365.755-1.385 1.132v12.897c0 .905.924 1.244 1.385 1.301h9.64c.501-.038 1.505-.35 1.505-1.301V3.802c-.04-.377-.398-1.131-1.506-1.131h-1.193" stroke="#4C34C3" stroke-width="1.965"/><path d="M10.29 1H5.696a.25.25 0 00-.25.25v2.84c0 .139.111.251.25.251h4.594a.25.25 0 00.25-.25V1.25A.25.25 0 0010.29 1z" stroke="#4C34C3" stroke-width="1.277"/>
+          <span class="tooltip">Copy to Clipboard</span>
+          <svg width="15" height="18" viewBox="0 0 15 18" fill="none">
+            <path class="clip-body" d="M3.15582 3.28192C2.13925 3.28192 1.8466 3.95686 1.82735 4.29433V15.8357C1.82735 16.6457 2.71299 16.9494 3.15582 17H12.3973C12.8787 16.9663 13.8413 16.6862 13.8413 15.8357V4.29433C13.8028 3.95686 13.4601 3.28192 12.3973 3.28192"/>
+            <path class="clip-clip" d="M11.2013 1H4.47756C4.27501 1 4.11081 1.1642 4.11081 1.36675V5.19725C4.11081 5.3998 4.27501 5.564 4.47756 5.564H11.2013C11.4039 5.564 11.5681 5.3998 11.5681 5.19725V3.282V1.36675C11.5681 1.1642 11.4039 1 11.2013 1Z"/>
           </svg>
         </button>
       </div>
     </div>
+
+    <!-- JAVASCRIPT -->
+    
     <script src="dist/app.js"></script>
     <script src="dist/clipboard.js"></script>
   </body>

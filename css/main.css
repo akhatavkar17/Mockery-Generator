@@ -48,10 +48,51 @@ textarea{
   top: 0;
   right: 0;
   margin: 20px;
-  width: 50px;
-  border:1px solid #a3a3a3;
-  border-radius: 5px;
+  width: 34px;
+  height: 34px;
+  background-color: #696969;
+  border:1px transparent;
+  border-radius: 2px;
   cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.clipboard:hover{
+  background-color: #969696;
+}
+
+.tooltip {
+  visibility: hidden;
+  width: 120px;
+  bottom: 110%;
+  left: 50%;
+  margin-left: -100px;
+  background-color: #1c1c1c;
+  color: #c9c9c9;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 6px;
+  border: 2px solid #7d7d7d;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+}
+
+.clipboard:hover .tooltip {
+  visibility: visible;
+}
+
+.clip-body{
+  stroke: #cfcfcf;
+  stroke-width: 1.71429;
+  width: 100%
+}
+
+.clip-clip{
+   stroke: #cfcfcf;
+   stroke-width: 1.02857;
+   width: 100%
 }
 
 .boxes {
